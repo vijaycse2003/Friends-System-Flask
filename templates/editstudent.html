@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Edit Records</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+              integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" style="margin-top:80px;">
+                <div class="col-md-12">
+                    <h1 class="text-primary text-center bg-dark">Edit Student Details</h1>
+                    <form action="" method="post">
+                        <div class="form-group mt-2">
+                            <label class="form-label">Student Id</label>
+                            <input type="number"
+                                   name="id"
+                                   value="{{ data.id }}"
+                                   class="form-control"
+                                   required>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label class="form-label">Name</label>
+                            <input type="text"
+                                   name="name"
+                                   value="{{ data.name }}"
+                                   class="form-control"
+                                   required>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label class="form-label">Age</label>
+                            <input type="text"
+                                   name="age"
+                                   value="{{ data.age }}"
+                                   class="form-control"
+                                   required>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label class="form-label">City</label>
+                            <input type="text"
+                                   name="city"
+                                   value="{{ data.city }}"
+                                   class="form-control"
+                                   required>
+                            <div class=" d-grid ">
+                                <input type="submit"
+                                       class="mt-4 d-md-block btn btn-success btn-lg-12"
+                                       value="Update Details">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
